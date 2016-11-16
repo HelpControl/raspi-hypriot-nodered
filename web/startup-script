@@ -4,4 +4,8 @@ mkdir /root/.node-red/node_modules/
 ln -s /root/node_modules/node-red-contrib-azure-blob-storage /root/.node-red/node_modules/
 ln -s /root/node_modules/node-red-node-sensortag /root/.node-red/node_modules/
 ln -s /root/node_modules/node-red-contrib-azure-iot-hub /root/.node-red/node_modules/
+ln -s /root/node_modules/node-red-node-serialport /root/.node-red/node_modules/
+
+sudo chmod 666 /dev/ttyACM0
+
 exec node-red-pi -v --max-old-space-size=256

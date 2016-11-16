@@ -24,6 +24,12 @@ RUN apt-get update && \
 RUN npm install node-red-contrib-azure-blob-storage
 RUN npm install node-red-contrib-azure-iot-hub
 
+# serial for Node-RED
+RUN apt-get update && \
+    apt-get install -y cu && \
+    apt-get install -y lsof
+RUN npm install node-red-node-serialport
+
 # command
 COPY startup-script /opt/startup-script
 RUN chmod +x /opt/startup-script

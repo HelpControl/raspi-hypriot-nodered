@@ -9,4 +9,6 @@ services:
     volumes:
      - ./volumes/node-red:/root/.node-red
      - ../motion/volumes/motion/data/:/root/motion
+    devices:
+     - "/dev/ttyACM0:/dev/ttyACM0"
     network_mode: "host"
