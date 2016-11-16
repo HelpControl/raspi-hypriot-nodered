@@ -1,1 +1,6 @@
 *.swp
+/volumes/node-red/.*.backup
+/volumes/node-red/node_modules/node-red-contrib-azure-blob-storage
+/volumes/node-red/node_modules/node-red-contrib-azure-iot-hub
+/volumes/node-red/node_modules/node-red-node-sensortag
+/volumes/node-red/node_modules/node-red-node-serialport
